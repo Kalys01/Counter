@@ -4,6 +4,16 @@ const App = {
             counter: 0,
             header: 'Counter'
         }
+    },
+    mounted() {
+        if(localStorage.counter) {
+            this.counter = localStorage.counter;
+        }
+    },
+    watch:{
+        counter(newCounter) {
+            localStorage.counter = newCounter;
+        }
     }
 }
 
