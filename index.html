@@ -13,9 +13,9 @@
         <div class="block" id="app">
             <h1 class="header">{{ header }}</h1>
             <div class="db_buttons">
-                <button type="submit" class="btn success">+</button>
+                <button type="submit" class="btn success" @click="counter++">+</button>
                 <h1 class="counter">{{ counter }}</h1>
-                <button type="submit" class="btn danger">-</button>
+                <button type="submit" class="btn danger" @click="counter--">-</button>
             </div>
         </div>
     </div>
